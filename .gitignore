@@ -22,3 +22,6 @@ doc/
 
 #Ignore Paper Clip Uploads
 /public/system
+
+# Ignore Sampleimages
+/sampleimages
