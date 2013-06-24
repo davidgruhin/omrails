@@ -1,13 +1,12 @@
 
 <% if user_signed_in? %>
-<h1> You're Logged In!</h1>
+<h1> Welcome to Schlachet.ly | Try uploading a photo...</h1>
 <% else %>
 <div class="hero-unit">
 	<h1>Welcome to Schlachet.ly</h1>
 	<p>
-	You've found the home page for the
-	<%= link_to "Schlachet.ly", "http://schlachet.ly" %>
-	application.
+	Use <%= link_to "Schlachet.ly", "http://schlachet.ly" %>
+	to upload photos you think will amuse Jeremy Schlachet. Please keep it classy!
 	</p>
 	<p>
 	<%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
