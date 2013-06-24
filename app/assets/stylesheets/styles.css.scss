@@ -22,8 +22,36 @@ body {
 
 .footer {
 	margin-top: 50px;
+	margin-left: 95px;
 	color: $grayLight;
 	a {
 		color: $gray;
 	}
+}
+
+/* Required for jQuery Masonry */
+
+.box {
+	margin: 5px;
+	padding: 5px;
+	font-size: 11px;
+	line-height: 1.4em;
+	float: left;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	box-shadow: 1px 1px 10px #444;
+	width: 214px;
+}
+
+.box image {
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.description {
+	margin: 10px 0 5px;
 }
