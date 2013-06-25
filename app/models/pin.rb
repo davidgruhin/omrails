@@ -8,7 +8,7 @@ class Pin < ActiveRecord::Base
 															 size: { less_than: 5.megabytes}
 
   belongs_to :user
-  has_attached_file :image, styles: { medium: "320x240>", :source_file_options => '-auto-orient'}
+  has_attached_file :image, styles: { medium: "320x240>"}, :convert_options => { :all => '-auto-orient' }
 
   def image_remote_url=(url_value)
   	self.image = URI.parse(url_value) unless url_value.blank?
