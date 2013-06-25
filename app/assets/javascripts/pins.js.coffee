@@ -6,7 +6,7 @@ jQuery ->
 	$('#pins').imagesLoaded ->
 		$('#pins').masonry itemSelector: ".box"
 
-$ ->
+
   $(".popover-test").popover(html: true).popover "hide"
 
 
