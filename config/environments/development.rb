@@ -37,4 +37,15 @@ Omrails::Application.configure do
 
   #Devise HOST URL
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  #Action Mailer Google SMTP
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtpout.secureserver.net',
+    port:                 3535,
+    domain:               'schlachet.it',
+    user_name:            'no-reply@schlachet.it',
+    password:             'PRotected!18',
+    authentication:       'plain',
+    enable_starttls_auto: false  }
 end
