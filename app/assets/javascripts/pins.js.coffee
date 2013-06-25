@@ -6,6 +6,10 @@ jQuery ->
 	$('#pins').imagesLoaded ->
 		$('#pins').masonry itemSelector: ".box"
 
+$ ->
+  $(".popover-test").popover(html: true).popover "hide"
+
+
 # Override Rails handling of confirmation
 
 	$.rails.allowAction = (element) ->
