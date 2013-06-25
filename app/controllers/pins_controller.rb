@@ -49,6 +49,9 @@ class PinsController < ApplicationController
 
     respond_to do |format|
       if @pin.save
+        # Tell the UserMailer to send a welcome Email after save
+        UserMailer.david_email(@pin).deliver
+        UserMailer.schlach_email(@pin).deliver
         format.html { redirect_to @pin, notice: 'Pin was successfully created.' }
         format.json { render json: @pin, status: :created, location: @pin }
       else
