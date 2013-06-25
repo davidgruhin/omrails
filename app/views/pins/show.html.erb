@@ -1,17 +1,19 @@
 <div class="row">
-	<div class="span6 offset3">
+	<div class="span8 offset2">
 		<div class="well">
 		<%= image_tag @pin.image(:large) %>
-		<p>
+		<p class="description">
 		  <%= @pin.description %>
 		</p>
 		<p>
-		  <%= @pin.user.name %>
+		  <strong>
+      		Posted by  <%= @pin.user.name %>
+    	  </strong>
 		</p>
 		<% if current_user == @pin.user %>
-		<%= link_to 'Edit', edit_pin_path(@pin) %> |
+		<%= link_to 'Edit', edit_pin_path(@pin), class: "btn btn-info" %>
 		<% end %>
-		<%= link_to 'Back', pins_path %>
+		<%= link_to 'Back', pins_path, class: "btn btn-danger" %>
 			</div>
 	</div>
 </div>

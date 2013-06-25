@@ -1,5 +1,5 @@
-/* $baseFontFamily: Oxygen; */
-/* @import url(https://fonts.googleapis.com/css?family=Oxygen); */
+$baseFontFamily: Oxygen;
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
 
 /* $btnPrimaryBackground: green; */
 $navbarBckgroundHighlight: white;
@@ -15,7 +15,7 @@ body {
 @import 'bootstrap-responsive';
 
 .navbar-inner {
-	@include box-shadow(none !important);
+	/* @include box-shadow(none !important); */
 	border: 0;
 }
 
@@ -52,8 +52,7 @@ body {
 
 .description {
 	margin: 10px 0 5px;
+	font-style: italic;
+	font-size: 20px;
 }
 
-.pagination {
-	margin-top: 142%;
-}

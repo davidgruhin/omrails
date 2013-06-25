@@ -27,7 +27,7 @@ jQuery ->
 
 	  # Create the modal box with the message
 	  modal_html = """
-	               <div class="modal" id="myModal">
+	               <div class="modal hide fade" id="myModal">
 	                 <div class="modal-header">
 	                   <a class="close" data-dismiss="modal">×</a>
 	                   <h3>#{message}</h3>
