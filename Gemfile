@@ -13,7 +13,6 @@ gem 'bootstrap-will_paginate'
 
 group :production do
 	gem 'pg'
-	gem 'rmagick', '2.13.2'
 end
 
 group :development, :test do

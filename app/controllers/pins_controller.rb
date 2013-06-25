@@ -81,7 +81,7 @@ class PinsController < ApplicationController
     @pin.destroy
 
     respond_to do |format|
-      format.html { redirect_to pins_url }
+      format.html { redirect_to pins_url notice: 'Pin was deleted.' }
       format.json { head :no_content }
     end
   end
