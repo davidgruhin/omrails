@@ -12,7 +12,8 @@
   <% if current_user == pin.user %>
     <%= link_to 'Edit', edit_pin_path(pin), class: "btn btn-mini btn-info" %>
     <%= link_to 'Delete', pin, class: "btn btn-mini btn-danger", method: :delete, data: { confirm: 'Are you sure you want to delete this?' }  %>
-    
   <% end %>
+      <div class="fb-like" data-href="http://schlachet.it<%= pin_path(pin) %>" data-layout="button_count" data-width="450" data-show-faces="false"   data-send="false" data-font="verdana">
+      </div>
   </p>
 </div>

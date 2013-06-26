@@ -31,6 +31,16 @@ body {
 
 /* Required for jQuery Masonry */
 
+.masonry-brick {
+	
+margin-bottom: 30px !important;
+
+}
+
+.masonry-brick > p:last-of-type {
+	display: none;
+}
+
 .box {
 	margin: 5px;
 	padding: 5px;
@@ -67,4 +77,11 @@ body {
 	
 	top: -38px;
 	left: -10px;
+}
+
+.fb-up2 {
+	
+	top: -30px;
+	position: relative;
+	left: -36px;
 }
