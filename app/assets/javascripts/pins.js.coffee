@@ -52,13 +52,3 @@ jQuery ->
 	  # Prevent the original link from working
 	  return false
 
-# Endless Scroll
-
-	if $('.pagination').length
-		$(window).scroll ->
-			url = $('.pagination .next_page a').attr('href')
-			if url && $(window).scrollTop() > $(document).height() - $(window).height() - 50
-				# What to do at the bottom of the page
-				$('.pagination').text("Fetching more pins...")
-				$.getScript(url)
-			$(window).scroll()
